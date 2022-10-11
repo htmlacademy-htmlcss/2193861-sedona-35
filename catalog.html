@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="catalog-header">
+  <header class="catalog-header" data-test="header">
     <img src="" alt="Лого тура по Седоне">
     <nav class="navigation">
       <ul class="navigation-list">
@@ -34,7 +34,7 @@
       </ul>
     </nav>
   </header>
-  <main class="catalog-main">
+  <main class="catalog-main" data-test="main">
     <header class="catalog-header">
       <h1 class="catalog-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -46,7 +46,7 @@
         </li>
       </ul>
     </header>
-    <section class="hotels-filter">
+    <section class="hotels-filter" data-test="filter">
       <h2 class="visually-hidden">Фильтры для подбора гостиницы</h2>
       <fieldset class="hotels-filter-infrastructure-group">
         <legend class="hotels-filter-infrustructure-title">Инфраструктура:</legend>
@@ -97,7 +97,7 @@
       <button type="submit">Применить</button>
       <button type="reset">Сбросить</button>
     </section>
-    <section class="hotels-catalog">
+    <section class="hotels-catalog" data-test="catalog">
       <h2>Найдено гостиниц: 38</h2>
       <select name="" id="">
         <option value="">Сначала дешевые</option>
@@ -177,7 +177,15 @@
       </ul>
     </section>
   </main>
-  <footer class="catalog-footer">
+  <footer class="catalog-footer" data-test="footer">
+    <section class="subscribe" data-test="subscribe">
+      <h2>Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="form-subscribe">
+        <input type="email" placeholder="Ваш e-mail">
+        <button type="submit">Подписаться</button>
+      </form>
+    </section>
     <section class="footer-social">
       <ul class="social-list">
         <li class="social-item">ВКонтакте</li>
