@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="catalog-header">
+    <img src="" alt="Лого тура по Седоне">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html" >Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="about.html" >О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html" >Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#" >Поиск</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#" >Понравившиеся</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#" >Хочу сюда!</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="catalog-main">
+    <header class="catalog-header">
+      <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumb-item">
+          <a href="index.html" class="breadcrumbs-link">Домой</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+    <section class="hotels-filter">
+      <h2 class="visually-hidden">Фильтры для подбора гостиницы</h2>
+      <fieldset class="hotels-filter-infrastructure-group">
+        <legend class="hotels-filter-infrustructure-title">Инфраструктура:</legend>
+        <ul class="hotels-filter-infrastructure-list">
+        <li class="hotels-filter-infrastructure-item">
+          <label class="control">
+            <input type="checkbox" name="swimming-pool" checked>
+            Бассейн
+          </label>
+        </li>
+        <li class="hotels-filter-infrastructure-item">
+          <label class="control">
+            <input type="checkbox" name="parking" checked>
+            Парковка
+          </label>
+        </li>
+        <li class="hotels=filter-infrastructure-item">
+          <label class="control">
+            <input type="checkbox" name="wi-fi" checked>
+            Wi-Fi
+          </label>
+        </li>
+        </ul>
+      </fieldset>
+      <fieldset class="hotels-filter-type-group">
+        <legend class="hotels-filter-type-title">Тип жилья:</legend>
+        <ul class="hotels-filter-type-list">
+          <li class="hotels-filter-type-item">
+            <label class="control">
+              <input type="radio" name="hotel">
+              Гостиница
+            </label>
+          </li>
+          <li class="hotels-filter-type-item">
+            <label class="control">
+              <input type="radio" name="motel">
+              Мотель
+            </label>
+          </li>
+          <li class="hotels-filter-type-item">
+            <label class="control">
+              <input type="radio" name="apartments">
+              Апартаменты
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Применить</button>
+      <button type="reset">Сбросить</button>
+    </section>
+    <section class="hotels-catalog">
+      <h2>Найдено гостиниц: 38</h2>
+      <select name="" id="">
+        <option value="">Сначала дешевые</option>
+      </select>
+      <a href="#" class="visually-hidden">Показать таблицей</a>
+      <a href="#" class="visually-hidden">Показать карточки</a>
+      <a href="#" class="visually-hidden">Показать списком</a>
+      <ul class="hotels-list">
+        <li class="hotel-card">
+          <a href="#">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+          </a>
+          <span class="hotel-card-type">Гостиница</span>
+          <span class="hotel-card-price">От 4000 ₽</span>
+          <a class="btn button-info" href="#">подробнее</a>
+          <a class="btn button-bookmark" href="#">в избранное</a>
+          <span class="hotel-card-rating-stars">4 звезды из пяти</span>
+          <span class="hotel-card-rating-numbers">Рейтинг: 8,5</span>
+        </li>
+        <li class="hotel-card">
+          <a href="#">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+          </a>
+          <span class="hotel-card-type">Гостиница</span>
+          <span class="hotel-card-price">От 5000 ₽</span>
+          <a class="btn button-info" href="#">подробнее</a>
+          <a class="btn button-bookmark-done" href="#">в избранном</a>
+          <span class="hotel-card-rating-stars">4 звезды из пяти</span>
+          <span class="hotel-card-rating-numbers">Рейтинг: 9,2</span>
+        </li>
+        <li class="hotel-card">
+          <a href="#">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+          </a>
+          <span class="hotel-card-type">Гостиница</span>
+          <span class="hotel-card-price">От 2500 ₽</span>
+          <a class="btn button-info" href="#">подробнее</a>
+          <a class="btn button-bookmark" href="#">в избранное</a>
+          <span class="hotel-card-rating-stars">3 звезды из пяти</span>
+          <span class="hotel-card-rating-numbers">Рейтинг: 6,9</span>
+        </li>
+        <li class="hotel-card">
+          <a href="#">
+            <img class="hotel-card-image" src="" alt="">
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
+          </a>
+          <span class="hotel-card-type">Гостиница</span>
+          <span class="hotel-card-price">От 1500 ₽</span>
+          <a class="btn button-info" href="#">подробнее</a>
+          <a class="btn button-bookmark" href="#">в избранное</a>
+          <span class="hotel-card-rating-stars">2 звезды из пяти</span>
+          <span class="hotel-card-rating-numbers">Рейтинг: 5,0</span>
+        </li>
+      </ul>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li>
+          <span class="pagination-item-hidden">
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="catalog-footer">
+    <section class="footer-social">
+      <ul class="social-list">
+        <li class="social-item">ВКонтакте</li>
+        <li class="social-item">Телеграм</li>
+        <li class="social-item">Youtube</li>
+      </ul>
+    </section>
+    <section class="footer-contacts">
+      <address class="footer-contact-phone">
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+    </section>
+    <section class="footer-logo">
+      <img src="" alt="Логотип HTML Academy">
+    </section>
+  </footer>
+</body>
+</html>
