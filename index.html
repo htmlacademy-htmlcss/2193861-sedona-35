@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <img src="" alt="Лого тура по Седоне">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -32,9 +32,12 @@
         </ul>
       </nav>
     </header>
-    <main class="main-page">
-      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-      <section class="advantages">
+    <main class="main-page" data-test="main">
+      <section class="hero" data-test="hero">
+        <img src="" alt="большое изображение Седоны">
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+      </section>
+      <section class="advantages" data-test="advantages">
         <h2>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -78,7 +81,7 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="btn hotel-search-button">
@@ -87,8 +90,8 @@
       </section>
 
     </main>
-    <footer class="page-footer">
-      <section class="subscribe">
+    <footer class="page-footer" data-test="footer">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="form-subscribe">
