@@ -198,11 +198,16 @@
     <section class="subscribe" data-test="subscribe">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="form-subscribe">
-        Ваш e-mail
-        <input type="email" placeholder="Ваш e-mail">
+      <form class="form-subscribe" method="get" action="https://echo.htmlacademy.ru/">
+        <label class="subscribe">
+          Ваш e-mail
+        <input type="email" placeholder="Ваш e-mail" required>
+        </label>
+
+        <br>
+        <button type="submit">Подписаться</button>
       </form>
-      <button type="submit">Подписаться</button>
+
     </section>
     <section class="footer-social">
       <ul class="social-list">
