@@ -10,13 +10,13 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-400.woff2");
+  src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  background-color: #FFFFFF;
+  background: #F2F2F2;
   color: #000000;
 }
 
@@ -52,16 +52,15 @@ body {
   line-height: 10px;
   color: #FFFFFF;
   background: #7DB54F;
-  border-radius: 10px;
 }
 
+/* Advantages */
 .hero {
   background-image: url("../images/index-background.jpeg");
   background-color: #FFFFFF;
   color: #000000;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  text-align: center;
 }
 
 
@@ -69,12 +68,14 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
 }
 
 .advantages-sedona-reasons {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .sedona-advantages-text {
@@ -85,7 +86,6 @@ body {
 .advantages {
   background-color: #FFFFFF;
   color: #000000;
-  text-align: center;
 }
 
 .advantages-item-list h3 {
@@ -93,6 +93,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-item-list p {
@@ -100,6 +101,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  text-align: center;
 }
 
 .advantages-item-real-town {
@@ -150,6 +152,7 @@ body {
   color: #000000;
 }
 
+/* Hotel seatch */
 .hotel-search {
   background-color: #FFFFFF;
   color: #000000;
@@ -188,7 +191,7 @@ body {
   width: 275px;
   height: 36px;
 }
-
+/* Footer */
 .page-footer {
   background-color: #FFFFFF;
   color: #000000;
@@ -271,7 +274,7 @@ body {
 
 .hotels-filter {
   background-image: url("../images/catalog/filter-background.jpeg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-color: #FFFFFF;
   color: #000000;
   background-repeat: no-repeat;
