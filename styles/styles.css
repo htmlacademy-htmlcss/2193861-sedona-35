@@ -88,7 +88,7 @@ body {
   color: #000000;
 }
 
-.advantages-item-list h3 {
+.advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -96,7 +96,7 @@ body {
   text-align: center;
 }
 
-.advantages-item-list p {
+.advantages-item-text{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -109,7 +109,7 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-item-real-town p {
+.advantages-item-real-town .advantages-item-text {
   color: #FFFFFF;
 }
 
@@ -133,7 +133,7 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-item-devil-bridge p {
+.advantages-item-devil-bridge .advantages-item-text {
   color: #FFFFFF;
 }
 
@@ -159,14 +159,14 @@ body {
   text-align: center;
 }
 
-.hotel-search h2 {
+.hotel-search-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.hotel-search p {
+.hotel-search-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -181,7 +181,7 @@ body {
   text-align: center;
 }
 
-.hotel-search-button a {
+.hotel-search-link {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
@@ -205,7 +205,7 @@ body {
   color: #000000;
 }
 
-.subscribe h2 {
+.subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -213,7 +213,7 @@ body {
   color: #FFFFFF;
 }
 
-.subscribe p {
+.subscribe-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -224,12 +224,12 @@ body {
   color: #FFFFFF;
 }
 
-.form-subscribe input {
+.form-subscribe-input {
   background: #F2F2F2;
   border-radius: 4px 0px 0px 4px;
 }
 
-.form-subscribe button {
+.form-subscribe-submit-button {
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   color: #FFFFFF;
@@ -363,7 +363,7 @@ body {
   color: #000000;
 }
 
-.hotels-catalog h2 {
+.hotels-catalog-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
