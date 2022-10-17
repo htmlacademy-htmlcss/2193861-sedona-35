@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Седона: каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="main-header" data-test="header">
@@ -26,15 +27,18 @@
           <a class="navigation-link" href="#" >Поиск</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#" >Избранное12</a>
+          <a class="navigation-link" href="#" >Избранное <span class="span-likes">12</span></a>
         </li>
       </ul>
-        <a class="navigation-link" href="#" >Хочу сюда!</a>
+        <a class="navigation-link-want" href="#" >Хочу сюда!</a>
     </nav>
   </header>
   <main class="catalog-main" data-test="main">
-    <header class="catalog-header">
-      <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+
+    <section class="hotels-filter" data-test="filter">
+      <header class="catalog-header">
+        <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+      </header>
       <ul class="breadcrumbs">
         <li class="breadcrumb-item">
           <a href="index.html" class="breadcrumbs-link">На главную</a>
@@ -43,8 +47,6 @@
           <a href="#" class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
-    </header>
-    <section class="hotels-filter" data-test="filter">
       <h2 class="visually-hidden">Фильтры</h2>
       <form action="https://echo.htmlacademy.ru/" method="get" class="hotels-filter-form">
         <fieldset class="hotels-filter-infrastructure-group">
@@ -62,7 +64,7 @@
               Парковка
             </label>
           </li>
-          <li class="hotels=filter-infrastructure-item">
+          <li class="hotels-filter-infrastructure-item">
             <label class="control-hotels-filter-infrastructure">
               <input type="checkbox" name="wi-fi">
               Wi-Fi
@@ -93,16 +95,12 @@
             </li>
           </ul>
         </fieldset>
-
         <fieldset class="hotels-filter-price-group">
-
           <legend class="hotels-filter-price-title">Стоимость, ₽:</legend>
-
                 <label class="hotels-filter-price">
                   От
                   <input type="number" min="0" max="9000" placeholder="0">
                 </label>
-
                 <label class="hotels-filter-price">
                   До
                   <input type="number" min="0" max="9000" placeholder="9000">
@@ -110,13 +108,12 @@
           <button class="btn button-price">Управление нижней границей стоимости</button>
           <button class="btn button-price">Управление верхней границей стоимости</button>
         </fieldset>
-
-        <button type="submit">Применить</button>
-        <button type="reset">Сбросить</button>
+        <button class="btn button-submit" type="submit">Применить</button>
+        <button class="btn button-reset" type="reset">Сбросить</button>
       </form>
     </section>
     <section class="hotels-catalog" data-test="catalog">
-      <h2>Найдено гостиниц: 38</h2>
+      <h2 class="hotels-catalog-title">Найдено гостиниц: 38</h2>
       <label class="visually-hidden">
         Сортировка по цене
         <select name="hotels-filter-price-sort">
@@ -199,7 +196,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li>
-          <span class="pagination-item-hidden"></span>
+          <span class="pagination-item-hidden">...</span>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
@@ -209,16 +206,16 @@
   </main>
   <footer class="page-footer" data-test="footer">
     <section class="subscribe" data-test="subscribe">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="form-subscribe" method="get" action="https://echo.htmlacademy.ru/">
         <label class="subscribe">
           Ваш e-mail
-        <input type="email" placeholder="Ваш e-mail" required>
+        <input class="form-subscribe-input" type="email" placeholder="Ваш e-mail" required>
         </label>
 
         <br>
-        <button type="submit">Подписаться</button>
+        <button class="form-subscribe-submit-button" type="submit">Подписаться</button>
       </form>
 
     </section>
