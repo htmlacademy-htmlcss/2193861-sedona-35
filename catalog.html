@@ -10,7 +10,7 @@
 <body>
   <header class="main-header" data-test="header">
     <nav class="navigation">
-      <img class="navigation-logo" src="images/logo-sedona.svg" alt="Логотип города Седона." width="138" height="64">
+      <img class="navigation-logo" src="./images/logo-sedona.svg" alt="Логотип города Седона." width="138" height="64">
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html" >Главная</a>
@@ -24,13 +24,21 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#" >Поиск</a>
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#" >Избранное <span class="span-likes">12</span></a>
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное<span class="span-likes">12</span></span>
+          </a>
+        </li>
+
+        <li  class="navigation-item-button" href="#">
+          <a class="navigation-link-want" href="#" >Хочу сюда!</a>
         </li>
       </ul>
-        <a class="navigation-link-want" href="#" >Хочу сюда!</a>
+
     </nav>
   </header>
   <main class="main-container catalog-main" data-test="main">
@@ -39,18 +47,18 @@
       <section class="hotels-filter-header">
       <header class="catalog-header">
         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumb-item-home">
+            <a href="index.html" class="breadcrumbs-link-home"><span class="visually-hidden">На главную</span></a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#" class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
       </header>
-      <ul class="breadcrumbs">
-        <li class="breadcrumb-item">
-          <a href="index.html" class="breadcrumbs-link">На главную</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="#" class="breadcrumbs-link">Гостиницы</a>
-        </li>
-      </ul>
       </section>
       <section class="hotels-filter-control">
-      <!--  <h2 class="visually-hidden">Фильтры</h2>  -->
+      <h2 class="visually-hidden">Фильтры</h2>
       <form action="https://echo.htmlacademy.ru/" method="get" class="hotels-filter-form">
         <fieldset class="hotels-filter-infrastructure-group">
           <legend class="hotels-filter-infrustructure-title">Инфраструктура:</legend>
@@ -111,32 +119,35 @@
           <button class="btn button-price">Управление нижней границей стоимости</button>
           <button class="btn button-price">Управление верхней границей стоимости</button>
         </fieldset>
+        <div class="hotel-filter-button-container">
         <button class="btn button-submit" type="submit">Применить</button>
         <button class="btn button-reset" type="reset">Сбросить</button>
+        </div>
       </form>
       </section>
     </section>
     <section class="hotels-catalog" data-test="catalog">
       <section class="hotels-catalog-filter-view">
       <h2 class="hotels-catalog-title">Найдено гостиниц: 38</h2>
-      <label class="visually-hidden">
-        Сортировка по цене
+
+      <div class="hotels-filter-price">
+        <span class="visually-hidden">Сортировка по цене</span>
         <select name="hotels-filter-price-sort">
           <option value="">Сначала дешевые</option>
       </select>
-      </label>
-
+      </div>
       <ul class="hotels-catalog-view">
         <li class="hotels-catalog-view-type">
-          <a href="#" class="visually-hidden">Показать таблицей</a>
+          <a href="#" class=""><span class="visually-hidden">Показать таблицей</span></a>
         </li>
         <li class="hotels-catalog-view-type">
-          <a href="#" class="visually-hidden">Показать карточки</a>
+          <a href="#" class="visually-hidden"><span class="visually-hidden">Показать карточки</span></a>
         </li>
         <li class="hotels-catalog-view-type">
           <a href="#" class="visually-hidden">Показать списком</a>
         </li>
       </ul>
+
       </section>
       <ul class="hotels-list">
         <li class="hotel-card">
@@ -188,6 +199,7 @@
           <p class="hotel-card-rating-numbers">Рейтинг: 5,0</p>
         </li>
       </ul>
+
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current" href="#">1</a>
@@ -201,21 +213,25 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">4</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <span class="pagination-item-hidden">...</span>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
+
     </section>
   </div>
   </main>
 
   <footer class="page-footer" data-test="footer">
     <section class="subscribe" data-test="subscribe">
+      <div class="subscribe-container">
+      <div class="subscribe-text-container">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      </div>
       <form class="form-subscribe" method="get" action="https://echo.htmlacademy.ru/">
         <label>
           Ваш e-mail
@@ -224,19 +240,20 @@
         <br>
         <button class="form-subscribe-submit-button" type="submit">Подписаться</button>
       </form>
+      </div>
     </section>
     <div class="page-footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-item-vk" href="https://vk.com/htmlacademy">ВКонтакте</a>
+            <a class="social-item-vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
           </li>
           <li class="social-item">
-            <a class="social-item-vk" href="https://t.me/htmlacademy">Телеграм</a>
+            <a class="social-item-vk" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
           </li>
           <li class="social-item">
-            <a class="social-item-vk" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+            <a class="social-item-vk" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
           </li>
         </ul>
       </section>
