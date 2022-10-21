@@ -22,13 +22,21 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#" >Поиск</a>
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#" >Избранное <span class="span-likes">12</span></a>
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Избранное<span class="span-likes">12</span></span>
+              </a>
+            </li>
+
+            <li  class="navigation-item-button" href="#">
+              <a class="navigation-link-want" href="#" >Хочу сюда!</a>
             </li>
           </ul>
-            <a class="navigation-link-want" href="#" >Хочу сюда!</a>
+
         </nav>
       </header>
       <main class="main-container main-page" data-test="main">
@@ -46,8 +54,10 @@
           </div>
           <ul class="advantages-item-list">
             <li class="advantages-item-real-town">
+              <div class="advantage-item-text-container">
               <h3 class="advantages-item-title">Настоящий городок</h3>
               <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img src="images/house-in-mountains-photo.jpeg" alt="Домики на фоне гор" width="800" height="384">
             </li>
             <li class="advantages-item-small-place">
@@ -63,8 +73,10 @@
               <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item-devil-bridge">
+              <div class="advantage-item-text-container">
               <h3 class="advantages-item-title">Там есть мост дьявола</h3>
               <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
               <img src="images/canyon-photo.jpeg" alt="Фотография каньона и гор" width="800" height="384">
             </li>
             <li class="advantages-item-staying">
@@ -83,18 +95,23 @@
           </ul>
         </section>
         <section class="hotel-search" data-test="search">
+          <div class="hotel-search-container">
           <h2 class="hotel-search-title">Заинтересовались?</h2>
           <p class="hotel-search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button hotel-search-button">
             <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
           </button>
+        </div>
         </section>
       </div>
       </main>
       <footer class="page-footer" data-test="footer">
         <section class="subscribe" data-test="subscribe">
+          <div class="subscribe-container">
+          <div class="subscribe-text-container">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </div>
           <form class="form-subscribe" method="get" action="https://echo.htmlacademy.ru/">
             <label>
               Ваш e-mail
@@ -103,19 +120,20 @@
             <br>
             <button class="form-subscribe-submit-button" type="submit">Подписаться</button>
           </form>
+          </div>
         </section>
         <div class="page-footer-container">
           <section class="footer-social">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social-list">
               <li class="social-item">
-                <a class="social-item-vk" href="https://vk.com/htmlacademy">ВКонтакте</a>
+                <a class="social-item-vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
               </li>
               <li class="social-item">
-                <a class="social-item-vk" href="https://t.me/htmlacademy">Телеграм</a>
+                <a class="social-item-vk" href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
               </li>
               <li class="social-item">
-                <a class="social-item-vk" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
+                <a class="social-item-vk" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
               </li>
             </ul>
           </section>
