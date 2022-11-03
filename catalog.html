@@ -75,20 +75,23 @@
           <ul class="hotels-filter-infrastructure-list">
           <li class="hotels-filter-infrastructure-item">
             <label class="control-hotels-filter-infrastructure">
-              <input type="checkbox" name="swimming-pool" checked>
-              Бассейн
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="swimming-pool" checked>
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Бассейн</span>
             </label>
           </li>
           <li class="hotels-filter-infrastructure-item">
             <label class="control-hotels-filter-infrastructure">
-              <input type="checkbox" name="parking" checked>
-              Парковка
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="parking" checked>
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Парковка</span>
             </label>
           </li>
           <li class="hotels-filter-infrastructure-item">
             <label class="control-hotels-filter-infrastructure">
-              <input type="checkbox" name="wi-fi">
-              Wi-Fi
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="wi-fi">
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Wi-Fi</span>
             </label>
           </li>
           </ul>
@@ -98,36 +101,53 @@
           <ul class="hotels-filter-type-list">
             <li class="hotels-filter-type-item">
               <label class="control-hotels-type">
-                <input type="radio" name="hotel-type" id="hotel" checked>
-                Гостиница
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="hotel" checked>
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Гостиница</span>
               </label>
             </li>
             <li class="hotels-filter-type-item">
               <label class="control-hotels-type">
-                <input type="radio" name="hotel-type" id="motel">
-                Мотель
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="motel">
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Мотель</span>
+
               </label>
             </li>
             <li class="hotels-filter-type-item">
               <label class="control-hotels-type">
-                <input type="radio" name="hotel-type" id="apartments">
-                Апартаменты
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="apartments">
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Апартаменты</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="hotels-filter-price-group">
           <legend class="hotels-filter-price-title">Стоимость, ₽:</legend>
-                <label class="hotels-filter-price">
-                  От
-                  <input type="number" min="0" max="9000" placeholder="0">
-                </label>
-                <label class="hotels-filter-price">
-                  До
-                  <input type="number" min="0" max="9000" placeholder="9000">
-                </label>
-          <button class="btn button-price">Управление нижней границей стоимости</button>
-          <button class="btn button-price">Управление верхней границей стоимости</button>
+            <div class="hotels-filter-price-range">
+              <div class="hotels-filter-price-wrapper">
+                <div class="hotels-filter-price-wrapper-input min-input">
+                  <label class="hotels-filter-price" for="min-price-input">От</label>
+                  <input class="hotels-filter-price-range-input" id="min-price-input" type="number" name="min-price" value="0" min="0" max="9000">
+                </div>
+                <div class="hotels-filter-price-wrapper-input max-input">
+                  <label class="hotels-filter-price" for="max-price-input">До</label>
+                  <input class="hotels-filter-price-range-input" id="max-price-input" type="number" name="min-price" value="9000" min="0" max="9000">
+                </div>
+              </div>
+              <div class="hotels-filter-price-range-scale">
+                <div class="hotels-filter-price-range-bar">
+                  <div class="hotels-filter-price-bar" style="width: 226px"></div>
+                </div>
+                <button class="hotels-filter-price-range-toggle price-min-range">
+                  <span class="visually-hidden">Управление нижней границей стоимости</span>
+                </button>
+                <button class="hotels-filter-price-range-toggle price-max-range">
+                  <span class="visually-hidden">Управление верхней границей стоимости</span>
+                </button>
+              </div>
+            </div>
         </fieldset>
         <div class="hotel-filter-button-container">
         <button class="btn button-submit" type="submit">Применить</button>
@@ -140,9 +160,9 @@
       <h2 class="visually-hidden">Каталог гостиниц</h2>
       <section class="hotels-catalog-filter-view">
       <h2 class="hotels-catalog-title">Найдено гостиниц: 38</h2>
-      <div class="hotels-filter-price">
+      <div class="hotels-filter-price-container">
         <span class="visually-hidden">Сортировка по цене</span>
-        <select name="hotels-filter-price-sort">
+        <select class="hotels-filter-price-sort">
           <option value="">Сначала дешевые</option>
       </select>
       </div>
