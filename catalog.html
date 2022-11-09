@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона: каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 </head>
 <body>
   <header class="main-header" data-test="header">
@@ -140,10 +141,10 @@
                 <div class="hotels-filter-price-range-bar">
                   <div class="hotels-filter-price-bar" style="width: 226px"></div>
                 </div>
-                <button class="hotels-filter-price-range-toggle price-min-range">
+                <button class="hotels-filter-price-range-toggle price-min-range" type="button">
                   <span class="visually-hidden">Управление нижней границей стоимости</span>
                 </button>
-                <button class="hotels-filter-price-range-toggle price-max-range">
+                <button class="hotels-filter-price-range-toggle price-max-range" type="button">
                   <span class="visually-hidden">Управление верхней границей стоимости</span>
                 </button>
               </div>
@@ -169,14 +170,14 @@
       <ul class="hotels-catalog-view">
         <li class="hotels-catalog-view-type hotels-catalog-view-type-current">
           <a href="#" class="button-view">
-            <svg aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path d="M0 0h16v14H0z"/></clipPath></defs>
             </svg>
             <span class="visually-hidden">Показать таблицей</span></a>
         </li>
         <li class="hotels-catalog-view-type">
           <a href="#" class="button-view">
-            <svg aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="b"><path d="M0 0h16v14H0z"/></clipPath></defs>
             </svg>
             <span class="visually-hidden">Показать карточки</span>
@@ -185,7 +186,7 @@
         <li class="hotels-catalog-view-type">
           <a href="#" class="button-view">
 
-            <svg aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="c"><path d="M0 0h16v14H0z"/></clipPath></defs>
             </svg>
             <span class="visually-hidden">Показать списком</span>
@@ -203,7 +204,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 4000 ₽</p>
           <a class="btn button-info" href="#">подробнее</a>
-          <a class="btn button-bookmark" href="#">в избранное</a>
+          <button class="btn button-bookmark" type="button">в избранное</button>
           <p class="hotel-card-rating-stars hotel-card-rating-stars-four">
           <span class="visually-hidden">4 звезды</span>
           </p>
@@ -217,7 +218,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 5000 ₽</p>
           <a class="btn button-info" href="#">подробнее</a>
-          <a class="btn button-bookmark-done" href="#">в избранном</a>
+          <button class="btn button-bookmark-done" type="button">в избранном</button>
           <p class="hotel-card-rating-stars hotel-card-rating-stars-four">
             <span class="visually-hidden">4 звезды</span>
           </p>
@@ -231,7 +232,7 @@
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 2500 ₽</p>
           <a class="btn button-info" href="#">подробнее</a>
-          <a class="btn button-bookmark" href="#">в избранное</a>
+          <button class="btn button-bookmark" type="button">в избранное</button>
           <p class="hotel-card-rating-stars hotel-card-rating-stars-three">
             <span class="visually-hidden">3 звезды</span>
           </p>
@@ -245,7 +246,7 @@
             <p class="hotel-card-type">Гостиница</p>
             <p class="hotel-card-price">От 1500 ₽</p>
             <a class="btn button-info" href="#">подробнее</a>
-            <a class="btn button-bookmark" href="#">в избранное</a>
+            <button class="btn button-bookmark" type="button">в избранное</button>
             <p class="hotel-card-rating-stars hotel-card-rating-stars-two">
               <span class="visually-hidden">2 звезды</span>
             </p>
@@ -277,7 +278,7 @@
   </div>
   </main>
   <footer class="page-footer" data-test="footer">
-    <section class="ubscribe-catalog" data-test="subscribe">
+    <section class="subscribe-catalog" data-test="subscribe">
       <div class="subscribe-container">
       <div class="subscribe-text-container">
       <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
