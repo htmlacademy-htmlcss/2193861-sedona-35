@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона: каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 </head>
 <body>
   <header class="main-header" data-test="header">
     <nav class="navigation">
-      <img class="navigation-logo" src="./images/logo-sedona.svg" alt="Логотип города Седона." width="140" height="70">
+      <a class="navigation-logo" href="index.html">
+        <img src="./images/logo-sedona.svg" alt="Логотип города Седона." width="140" height="70">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html" >Главная</a>
@@ -48,6 +51,7 @@
     </nav>
   </header>
   <main class="main-container catalog-main" data-test="main">
+    <h1 class="visually-hidden">Каталог</h1>
     <div class="page-container">
       <section class="hotels-filter" data-test="filter">
         <h2 class="visually-hidden">Управление фильтрами</h2>
@@ -197,7 +201,7 @@
       <ul class="hotels-list">
         <li class="hotel-card">
 
-          <img class="hotel-card-image" src="images/catalog/hotel-amara.jpeg" alt="Зведное небо в горах" width="300" height="212">
+          <img class="hotel-card-image" src="images/catalog/hotel-amara.jpeg" alt="Зведное небо в горах." width="300" height="212">
 
           <div class="hotels-features">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -212,7 +216,7 @@
         </div>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="images/catalog/hotel-diablo.jpeg" alt="Радуга над горами" width="300" height="212">
+          <img class="hotel-card-image" src="images/catalog/hotel-diablo.jpeg" alt="Радуга над горами." width="300" height="212">
           <div class="hotels-features">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           <p class="hotel-card-type">Гостиница</p>
@@ -226,7 +230,7 @@
         </div>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="images/catalog/hotel-desert.jpeg" alt="Скалы на фоне дневного неба" width="300" height="212">
+          <img class="hotel-card-image" src="images/catalog/hotel-desert.jpeg" alt="Скалы на фоне дневного неба." width="300" height="212">
           <div class="hotels-features">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
           <p class="hotel-card-type">Гостиница</p>
@@ -240,7 +244,7 @@
         </div>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="images/catalog/hotel-greentree.jpeg" alt="Горы на фоне ночного неба" width="300" height="212">
+          <img class="hotel-card-image" src="images/catalog/hotel-greentree.jpeg" alt="Горы на фоне ночного неба." width="300" height="212">
           <div class="hotels-features">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
             <p class="hotel-card-type">Гостиница</p>
@@ -271,7 +275,7 @@
           <span class="pagination-item-hidden">...</span>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
+          <a class="pagination-link pagination-last" href="#">10</a>
         </li>
       </ul>
     </section>

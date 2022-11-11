@@ -4,12 +4,15 @@
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
       <link rel="stylesheet" href="styles/styles.css">
+      <link rel="icon" href="favicon.ico">
       <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     </head>
     <body>
       <header class="main-header" data-test="header">
         <nav class="navigation">
-          <img class="navigation-logo" src="./images/logo-sedona.svg" alt="Логотип города Седона." width="140" height="70">
+          <a class="navigation-logo" href="index.html">
+            <img src="./images/logo-sedona.svg" alt="Логотип города Седона." width="140" height="70">
+          </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link navigation-link-index-current" href="index.html" >Главная</a>
@@ -69,7 +72,7 @@
               <h3 class="advantages-item-title advantages-item-title-town">Настоящий городок</h3>
               <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/house-in-mountains-photo.jpeg" alt="Домики на фоне гор" width="800" height="384">
+              <img src="images/house-in-mountains-photo.jpeg" alt="Домики на фоне гор." width="800" height="384">
             </li>
             <li class="advantages-item-small-place">
               <div class="advantage-item-text-container advantage-item-text-container-place">
@@ -94,20 +97,20 @@
               <h3 class="advantages-item-title advantages-item-title-bridge">Там есть<br>мост дьявола</h3>
               <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img src="images/canyon-photo.jpeg" alt="Фотография каньона и гор" width="800" height="384">
+              <img src="images/canyon-photo.jpeg" alt="Фотография каньона и гор." width="800" height="384">
             </li>
             <li class="advantages-item-staying">
-              <img class="advantages-item-icon" src="./images/icons/advantage-icon-home.svg" alt="Жильё">
+              <img class="advantages-item-icon" src="./images/icons/advantage-icon-home.svg" alt="Жильё." width="75" height="72">
               <h3 class="advantages-item-title">Жильё</h3>
               <p class="advantages-item-text advantages-item-text-staying">Рекомендуем пожить<br> в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="advantages-item-food">
-              <img class="advantages-item-icon" src="./images/icons/advantage-icon-food.svg" alt="Еда">
+              <img class="advantages-item-icon" src="./images/icons/advantage-icon-food.svg" alt="Еда." width="75" height="72">
               <h3 class="advantages-item-title">Еда</h3>
               <p class="advantages-item-text advantages-item-text-food">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item-souvenirs">
-              <img class="advantages-item-icon" src="./images/icons/advantage-icon-souvenir.svg" alt="Сувениры">
+              <img class="advantages-item-icon" src="./images/icons/advantage-icon-souvenir.svg" alt="Сувениры." width="75" height="72">
               <h3 class="advantages-item-title">Сувениры</h3>
               <p class="advantages-item-text advantages-item-text-souvenirs">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
@@ -195,12 +198,12 @@
             <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="check-in-input-group">
                 <label class="check-in-date-title" for="check-in-date">Дата заезда:</label>
-                <input class="check-in-date-input" type="text" name="check-in-date" id="check-in-date" value="27 апреля 2020">
+                <input class="check-in-date-input" type="text" name="check-in-date" id="check-in-date" value="27 апреля 2020" required>
                 <p class="booking-text warning">Мы не можем отправить вас в прошлое.</p>
               </div>
               <div class="check-in-input-group">
                 <label class="check-in-date-title" for="check-in-date">Дата выезда:</label>
-                <input class="check-in-date-input" type="text" name="check-out-date" id="check-out-date" value="1 сентября 2023">
+                <input class="check-in-date-input" type="text" name="check-out-date" id="check-out-date" value="1 сентября 2023" required>
                 <p class="booking-text">На эти даты есть свободные номера. Пока есть.</p>
               </div>
               <div class="guests-count-container">
@@ -208,7 +211,8 @@
                 <label class="guest-count-title-adults">Взрослые:</label>
                   <div class="guests-count">
                     <span class="input-control-minus"></span>
-                    <input class="input-counter" type="text" value="2">
+                    <label class="visually-hidden" for="input-counter-control-adults">Количество взрослых</label>
+                    <input class="input-counter" id="input-counter-control-adults" type="text" value="2" required>
                     <span class="input-control-plus"></span>
                   </div>
                 </div>
@@ -226,7 +230,8 @@
                   </span>
                   <div class="guests-count">
                     <span class="input-control-minus"></span>
-                    <input class="input-counter" type="text" value="2">
+                    <label class="visually-hidden" for="input-counter-control-kids">Количество детей</label>
+                    <input class="input-counter" id="input-counter-control-kids" type="text" value="2" required>
                     <span class="input-control-plus"></span>
                   </div>
                 </div>
