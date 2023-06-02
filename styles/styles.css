@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   background: #f2f2f2;
   color: #000000;
   min-height: 100%;
@@ -79,10 +79,13 @@ img {
 }
 
 .navigation-user {
-  width: 268px;
-  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  min-width: 268px;
+  height: 64px;
   padding: 0;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .navigation-logo {
@@ -94,7 +97,7 @@ img {
 
 .navigation-link {
   display: block;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -106,33 +109,31 @@ img {
   padding: 20px 16px;
 }
 
-.navigation-link-index-current::before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 68px;
-  background-color: #756257;
-  top: 63px;
+.navigation-link:hover {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.navigation-link-catalog-current::before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 96px;
-  background-color: #756257;
-  top: 63px;
+.navigation-link:focus {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.navigation-link:active {
+  background-color: rgba(131, 179, 211, 0.6);
+}
+
+.navigation-link-current {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .navigation-user .navigation-link {
   min-width: 20px;
   min-height: 20px;
-  padding: 22px 12px;
+  padding: 20px 12px;
 }
 
 .navigation-user .navigation-item {
   width: 44px;
-  height: 64px;
+  min-height: 64px;
 }
 
 .navigation-link-like {
@@ -153,16 +154,15 @@ img {
 
 .navigation-item-button {
   display: inline-block;
-  width: 160px;
-  height: 30px;
-  margin: 14px 0;
+  min-width: 160px;
+  min-height: 30px;
   margin-left: 20px;
 }
 
 .navigation-link-want {
-  display: block;
+  display: inline-block;
   background: #756157;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -176,29 +176,11 @@ img {
 }
 
 .navigation-link-want:hover {
-  display: block;
   background: #615048;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 8px 34px;
-  border-radius: 4px;
 }
 
 .navigation-link-want:focus {
-  display: block;
   background: #615048;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 8px 34px;
-  border-radius: 4px;
 }
 
 .navigation-link-want:active {
@@ -240,7 +222,7 @@ img {
   background-color: #ffffff;
   color: #000000;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 485px;
   margin: 0 auto;
   width: 1200px;
   height: 485px;
@@ -256,7 +238,7 @@ img {
 }
 
 .advantages-about-sedona {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -271,7 +253,7 @@ img {
 }
 
 .advantages-sedona-reasons {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -287,6 +269,16 @@ img {
 .sedona-advantages-text {
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-advantages-text-about {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url('/images/about-image.avif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -538,7 +530,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -555,7 +547,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -573,7 +565,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -591,7 +583,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -609,7 +601,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -645,6 +637,7 @@ img {
 }
 
 .subscribe-catalog {
+  background-image: url("../images/subscribe-background.jpeg");
   background-color: #ffffff;
   color: #000000;
   width: 1200px;
@@ -685,7 +678,7 @@ img {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
@@ -705,7 +698,7 @@ img {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   margin: 0;
   margin-bottom: 54px;
@@ -727,7 +720,7 @@ img {
   padding-bottom: 14px;
   padding-left: 20px;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -744,7 +737,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   text-transform: uppercase;
   width: 232px;
   min-height: 52px;
@@ -759,7 +752,7 @@ img {
   background: #68a2ca;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -777,7 +770,7 @@ img {
   background: #68a2ca;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -795,7 +788,7 @@ img {
   background: #82b3d3;
   border-radius: 0 4px 4px 0;
   color: rgba(255, 255, 255, 0.3);
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -813,7 +806,7 @@ img {
   background: #E5E5E5;
   border-radius: 0 4px 4px 0;
   color: #FFFFFF;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -975,7 +968,7 @@ img {
   width: 1060px;
   margin: 0 auto;
   padding-top: 35px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .hotels-filter-control {
@@ -983,7 +976,7 @@ img {
   min-height: 160px;
   display: flex;
   flex-direction: column;
-  margin: 0 70px 70px 70px;
+  padding: 0 70px 70px 70px;
 }
 
 .catalog-header-title {
@@ -1095,11 +1088,11 @@ img {
   width: 20px;
   height: 20px;
   left: 0;
-  top: 2px;
+  top: 0;
 }
 
 .control-infrastructure-label {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1148,11 +1141,11 @@ img {
   width: 20px;
   height: 20px;
   left: 0;
-  top: 2px;
+  top: 0;
 }
 
 .control-type-label {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1399,7 +1392,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1418,7 +1411,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1436,7 +1429,7 @@ img {
   border-radius: 4px;
   text-align: center;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1455,7 +1448,7 @@ img {
   border: none;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1474,7 +1467,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1493,7 +1486,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1513,7 +1506,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff4d;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1532,7 +1525,7 @@ img {
   border-radius: 4px;
   text-align: center;
   color: #ffffff4d;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1552,7 +1545,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff4d;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1573,7 +1566,7 @@ img {
   text-align: center;
   color: #ffffff;
   opacity: 0.1;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1819,7 +1812,7 @@ img {
 
 .button-bookmark {
   background: #82b3d3;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1891,7 +1884,7 @@ img {
 
 .button-bookmark-done {
   background: #7db54f;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1906,7 +1899,7 @@ img {
 
 .button-bookmark-done:hover {
   background: #6c9e42;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -2273,7 +2266,7 @@ img {
 }
 
 .modal-title {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -2299,7 +2292,6 @@ img {
 
 .check-in-date-input {
   padding: 12px 20px;
-  padding-right: 40px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
@@ -2310,16 +2302,12 @@ img {
   line-height: 24px;
   color: #000000;
   width: 380px;
-  background-image: url("../images/icons/date.svg");
-  background-position: right 20px center;
-  background-repeat: no-repeat;
 }
 
 .booking-text {
   margin-top: 4px;
-  margin-left: 157px;
   margin-bottom: 23px;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2506,7 +2494,6 @@ img {
   color: #000000;
 }
 
-
 .find-button {
   background: #83b3d3;
   border-radius: 10px;
@@ -2514,7 +2501,7 @@ img {
   padding: 18px 77px;
   width: 577px;
   color: #ffffff;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2524,4 +2511,98 @@ img {
 
 .modal-container-close {
   display: none;
+}
+
+.subscription-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.subscription-container-close {
+  display: none;
+}
+
+.subscription-modal {
+  position: relative;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  padding: 80px;
+}
+
+.subscription-auth {
+  width: 50%;
+}
+
+.subscription-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-modal-title {
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subscription-ok-button {
+  background: #83b3d3;
+  border-radius: 10px;
+  border: none;
+  padding: 18px 77px;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.subscription-ok-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-ok-button:focus {
+  background-color: #68A2CA;
+}
+
+.subscription-ok-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription-modal-close-button {
+  position: absolute;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+  top: 24px;
+  right: 24px;
+  background-image: url("../images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
