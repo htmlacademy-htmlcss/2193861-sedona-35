@@ -14,13 +14,15 @@ wantButton.addEventListener('click', () => {
 
 findButton.addEventListener('click', (evt) => {
   evt.preventDefault();
-  location.href="./catalog.html";
+  location.href="/catalog";
 });
 
-searchButton.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  modalContainer.classList.remove('modal-container-close');
-});
+if (searchButton) {
+  searchButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modalContainer.classList.remove('modal-container-close');
+  });
+}
 
 closeModalButton.addEventListener('click', () => {
   modalContainer.classList.add('modal-container-close');

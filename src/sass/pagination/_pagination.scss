@@ -1,0 +1,233 @@
+.pagination {
+  position: relative;
+  background: #ffffff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1060px;
+  margin: 0 70px 0 70px;
+  padding: 0;
+}
+
+.pagination::after {
+  content: "";
+  height: 1px;
+  background-color: #e6e6e6;
+  width: 1060px;
+  position: absolute;
+  top: -40px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  background: #82b3d3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-link:hover {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 11px 23px;
+  border-radius: 4px;
+  border: 1px solid #82b3d3;
+  box-sizing: border-box;
+  background: #68A2CA;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-link:focus {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 11px 23px;
+  border-radius: 4px;
+  border: 1px solid #82b3d3;
+  box-sizing: border-box;
+  background: #68A2CA;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-link:active {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 11px 23px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background: #f2f2f2;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination-current:hover {
+  background: #f2f2f2;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+
+.pagination-current:focus {
+  background: #f2f2f2;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+
+.pagination-current:active {
+  background: #f2f2f2;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+
+.pagination-item-hidden {
+  display: block;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 16px;
+  border-radius: 4px;
+}
+
+.pagination-last {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 12px 18px;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  background: #82b3d3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-last:hover {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 11px 17px;
+  border-radius: 4px;
+  border: 1px solid #82b3d3;
+  box-sizing: border-box;
+  background: #68A2CA;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-last:focus {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 11px 17px;
+  border-radius: 4px;
+  border: 1px solid #82b3d3;
+  box-sizing: border-box;
+  background: #68A2CA;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-last:active {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 11px 17px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}

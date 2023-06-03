@@ -1,0 +1,208 @@
+.button-info {
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.button-info:hover {
+  background: #615048;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.button-info:focus {
+  background: #615048;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.button-info:active {
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.button-info:disabled {
+  background: #e5e5e5;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.button-bookmark {
+  background: #82b3d3;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.button-bookmark:hover {
+  background: #68a2ca;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark:focus {
+  background: #68a2ca;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark:active {
+  background: #82b3d3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff4d;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark:disabled {
+  background: #e5e5e5;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark-done {
+  background: #7db54f;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark-done:hover {
+  background: #6c9e42;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark-done:focus {
+  background: #6c9e42;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark-done:active {
+  background: #7db54f;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff4d;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-bookmark-done:disabled {
+  background: #e5e5e5;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

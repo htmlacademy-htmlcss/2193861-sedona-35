@@ -1,0 +1,53 @@
+<div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Hotel search in Sedona</h2>
+            <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="check-in-input-group">
+                <label class="check-in-date-title" for="check-in-date">Arrival date:</label>
+                <input class="check-in-date-input" type="date" name="check-in-date" id="check-in-date" value="2020-04-27" required>
+                <p class="booking-text warning">We cannot send you to the past.</p>
+              </div>
+              <div class="check-in-input-group">
+                <label class="check-in-date-title" for="check-in-date">Date of departure:</label>
+                <input class="check-in-date-input" type="date" name="check-out-date" id="check-out-date" value="2023-09-01" required>
+                <p class="booking-text">There are rooms available for these dates. As long as there is.</p>
+              </div>
+              <div class="guests-count-container">
+                <div class="guests-count-wrapper">
+                <label class="guest-count-title-adults">Adults:</label>
+                  <div class="guests-count">
+                    <span class="input-control-minus"></span>
+                    <label class="visually-hidden" for="input-counter-control-adults">Number of adults</label>
+                    <input class="input-counter" id="input-counter-control-adults" type="text" value="2" required>
+                    <span class="input-control-plus"></span>
+                  </div>
+                </div>
+                <div class="guests-count-wrapper">
+                  <span class="guest-count-title">
+                    <label class="guest-count-title-kids">Children:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Enter the number of children who will be with you, whose age is from 6 to 18 years. Children under 6 years stay free of charge.</span>
+                    </span>
+                  </span>
+                  <div class="guests-count">
+                    <span class="input-control-minus"></span>
+                    <label class="visually-hidden" for="input-counter-control-kids">Amount of children</label>
+                    <input class="input-counter" id="input-counter-control-kids" type="text" value="2" required>
+                    <span class="input-control-plus"></span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn find-button" type="submit">Search</button>
+            </form>
+          </section>
+        </div>
+      </div>

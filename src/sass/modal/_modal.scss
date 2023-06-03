@@ -1,0 +1,289 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  padding: 64px 70px;
+}
+
+.modal-auth {
+  width: 577px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+  top: 64px;
+  right: 52px;
+  background-image: url("../images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.check-in-input-group {
+  width: 577px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.check-in-date-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.check-in-date-input {
+  padding: 12px 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  width: 380px;
+}
+
+.booking-text {
+  margin-top: 4px;
+  margin-bottom: 23px;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.warning {
+  color: #ff5757;
+}
+
+.guests-count-container {
+  width: 577px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.guests-count-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guests-count {
+  width: 110px;
+  height: 48px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guest-count-title-adults {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-right: 46px;
+}
+
+.guest-count-title-kids {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.guest-count-title {
+  margin-right: 72px;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tooltip-toggle {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 256px;
+  display: none;
+  padding-top: 15px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+  position: absolute;
+  top: 100%;
+  left: -136px;
+  margin-top: 16px;
+}
+
+.tooltip-text::after {
+  content: "";
+  background-image: url("../images/tooltip-arrow.svg");
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.input-control-minus {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 14px 10px;
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.input-control-minus::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: rgba(117, 97, 87, 0.3);
+  transform: rotate(-90deg);
+  top: 18px;
+  right: 18px;
+}
+
+.input-control-plus {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 14px 10px;
+  background-color: #f2f2f2;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-control-plus::after,
+.input-control-plus::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: rgba(117, 97, 87, 0.3);
+  transform: rotate(-90deg);
+  top: 18px;
+  right: 18px;
+}
+
+.input-control-plus::before {
+  transform: rotate(180deg);
+}
+
+.input-counter {
+  padding: 14px 10px;
+  width: 11px;
+  height: 20px;
+  display: block;
+  border: none;
+  background-color: #f2f2f2;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.find-button {
+  background: #83b3d3;
+  border-radius: 10px;
+  border: none;
+  padding: 18px 77px;
+  width: 577px;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.modal-container-close {
+  display: none;
+}
