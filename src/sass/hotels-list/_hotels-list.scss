@@ -1,0 +1,10 @@
+.hotels-list {
+  width: 1060px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  margin: 20px 70px;
+  padding: 0;
+  gap: 20px;
+  list-style-type: none;
+  margin-bottom: 80px;
+}

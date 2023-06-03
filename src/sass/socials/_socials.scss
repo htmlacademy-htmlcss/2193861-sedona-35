@@ -1,0 +1,40 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 142px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-item {
+  margin-right: 0;
+}
+
+.social-link {
+  display: flex;
+  width: 47px;
+  height: 40px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  fill: #83b3d3;
+}
+
+.social-icon:hover {
+  fill: #68a2ca;
+}
+
+.social-icon:focus {
+  fill: #68a2ca;
+}
+
+.social-icon:active {
+  fill: rgba(104, 162, 202, 0.3);
+}

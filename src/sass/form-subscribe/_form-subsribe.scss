@@ -1,0 +1,114 @@
+.form-subscribe {
+  color: #ffffff;
+  width: 684px;
+  display: flex;
+}
+
+.form-subscribe-input {
+  background-color: #f2f2f2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  width: 452px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background-image: url("../images/icons/date.svg");
+  background-repeat: no-repeat;
+  background-position: right 65px center;
+}
+
+.form-subscribe-submit-button {
+  background: #82b3d3;
+  border-radius: 0 4px 4px 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: 'League Spartan', sans-serif;
+  text-transform: uppercase;
+  width: 232px;
+  min-height: 52px;
+  text-align: center;
+  padding: 8px 50px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-subscribe-submit-button:hover {
+  background: #68a2ca;
+  border-radius: 0 4px 4px 0;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 232px;
+  height: 52px;
+  text-align: center;
+  padding: 8px 50px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-subscribe-submit-button:focus {
+  background: #68a2ca;
+  border-radius: 0 4px 4px 0;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 232px;
+  height: 52px;
+  text-align: center;
+  padding: 8px 50px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-subscribe-submit-button:active {
+  background: #82b3d3;
+  border-radius: 0 4px 4px 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 232px;
+  height: 52px;
+  text-align: center;
+  padding: 8px 50px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-subscribe-submit-button:disabled {
+  background: #E5E5E5;
+  border-radius: 0 4px 4px 0;
+  color: #FFFFFF;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  width: 232px;
+  height: 52px;
+  text-align: center;
+  padding: 8px 50px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}

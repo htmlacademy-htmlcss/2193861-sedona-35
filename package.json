@@ -1,0 +1,24 @@
+{
+  "name": "2193861-sedona-35",
+  "version": "1.0.0",
+  "description": "* Студент: [Денис Киршенин](https://up.htmlacademy.ru/htmlcss/35/user/2193861). * Наставник: [Михаил Кислый] (https://htmlacademy.ru/profile/smart-grizzly).",
+  "main": "index.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "scripts": {
+    "watch:sass": "sass --watch src/sass:src/css",
+    "build:sass": "sass src/sass:src/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.62.1"
+  }
+}

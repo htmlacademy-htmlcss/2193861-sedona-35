@@ -1,0 +1,9 @@
+{% include "header.njk" %}
+<main class="main-container main-page" data-test="main">
+  {{ content | safe }}
+</main>
+{% include "footer.njk" %}
+{% include "modal.njk" %}
+{% include "subscription-modal.njk" %}
+
+<script src="/js/script.js"></script>
