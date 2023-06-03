@@ -1,57 +1,3 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2");
-  font-display: swap;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  font-family: 'League Spartan', sans-serif;
-  background: #f2f2f2;
-  color: #000000;
-  min-height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-width: 1200px;
-}
-
-img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.main-container {
-  flex-grow: 1;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-/* Pages */
 .main-header {
   background-color: #ffffff;
   color: #000000;
@@ -59,8 +5,6 @@ img {
   margin: 0 auto;
   max-height: 64px;
 }
-
-/* navigation */
 
 .navigation {
   display: flex;
@@ -97,7 +41,7 @@ img {
 
 .navigation-link {
   display: block;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -121,7 +65,7 @@ img {
   background-color: rgba(131, 179, 211, 0.6);
 }
 
-.navigation-link-current {
+.navigation-link[aria-current=page] {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -162,7 +106,7 @@ img {
 .navigation-link-want {
   display: inline-block;
   background: #756157;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -209,14 +153,6 @@ img {
   border-radius: 4px;
 }
 
-/* Main */
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-/* Advantages */
-
 .hero {
   background-image: url("../images/index-background.jpeg");
   background-color: #ffffff;
@@ -238,7 +174,7 @@ img {
 }
 
 .advantages-about-sedona {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -253,7 +189,7 @@ img {
 }
 
 .advantages-sedona-reasons {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -275,7 +211,7 @@ img {
 
 .sedona-advantages-text-about {
   background-color: rgba(131, 179, 211, 0.12);
-  background-image: url('/images/about-image.avif');
+  background-image: url("/images/about-image.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #ffffff;
@@ -483,7 +419,6 @@ img {
   margin-bottom: 24px;
 }
 
-/* Hotel seatch */
 .hotel-search {
   display: flex;
   flex-direction: column;
@@ -530,7 +465,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -547,7 +482,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -565,7 +500,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -583,7 +518,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -601,7 +536,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -614,12 +549,25 @@ img {
   height: 36px;
 }
 
-/* Footer */
 .page-footer {
   background-color: #ffffff;
   color: #000000;
   width: 1200px;
   margin: 0 auto;
+}
+
+.page-footer-container {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 40px 70px 30px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  background-color: #ffffff;
+  color: #000000;
+  width: 142px;
 }
 
 .subscribe {
@@ -704,7 +652,6 @@ img {
   margin-bottom: 54px;
 }
 
-
 .form-subscribe {
   color: #ffffff;
   width: 684px;
@@ -720,7 +667,7 @@ img {
   padding-bottom: 14px;
   padding-left: 20px;
   box-sizing: border-box;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -737,7 +684,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   text-transform: uppercase;
   width: 232px;
   min-height: 52px;
@@ -752,7 +699,7 @@ img {
   background: #68a2ca;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -770,7 +717,7 @@ img {
   background: #68a2ca;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -788,7 +735,7 @@ img {
   background: #82b3d3;
   border-radius: 0 4px 4px 0;
   color: rgba(255, 255, 255, 0.3);
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -806,7 +753,7 @@ img {
   background: #E5E5E5;
   border-radius: 0 4px 4px 0;
   color: #FFFFFF;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -818,20 +765,6 @@ img {
   box-shadow: none;
   border: none;
   cursor: pointer;
-}
-
-.page-footer-container {
-  width: 1060px;
-  margin: 0 auto;
-  padding: 40px 70px 30px 70px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-social {
-  background-color: #ffffff;
-  color: #000000;
-  width: 142px;
 }
 
 .social-list {
@@ -916,7 +849,7 @@ img {
 
 .footer-contacts-address-phone:active {
   text-decoration: none;
-  color: #7561574d;
+  color: rgba(117, 97, 87, 0.3019607843);
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -940,14 +873,7 @@ img {
 }
 
 .footer-logo-icon:active {
-  fill: #7561574d;
-}
-
-
-/* Catalog */
-.catalog-main {
-  background-color: #ffffff;
-  color: #000000;
+  fill: rgba(117, 97, 87, 0.3019607843);
 }
 
 .hotels-filter {
@@ -961,7 +887,6 @@ img {
   flex-direction: column;
   width: 1200px;
   height: 412px;
-  margin-bottom: 50px;
 }
 
 .hotels-filter-header {
@@ -979,90 +904,6 @@ img {
   padding: 0 70px 70px 70px;
 }
 
-.catalog-header-title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-  color: #ffffff;
-  margin: 0;
-  margin-bottom: 8px;
-}
-
-/* breadcrumbs */
-
-.breadcrumbs {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  min-width: 114px;
-  align-items: center;
-}
-
-.breadcrumb-item-home {
-  color: #ffffff;
-  display: block;
-  margin-right: 10px;
-  width: 31px;
-  background-image: url("../images/icons/breadcrumbs.svg");
-  background-repeat: no-repeat;
-  background-position: center left 22px;
-  background-size: 8px auto;
-}
-
-.breadcrumbs-link-home {
-  fill: #ffffff;
-}
-
-.breadcrumbs-link-home:hover .breadcrumbs-home-icon {
-  fill: #ffffff99;
-}
-
-.breadcrumbs-link-home:focus .breadcrumbs-home-icon {
-  fill: #ffffff;
-}
-
-.breadcrumbs-link-home:active .breadcrumbs-home-icon {
-  fill: #ffffff4d;
-}
-
-.breadcrumb-item {
-  margin-right: 5px;
-}
-
-.breadcrumbs-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.breadcrumbs-link:hover {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff99;
-  text-decoration: none;
-}
-
-.breadcrumbs-link:focus {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.breadcrumbs-link:active {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff4d;
-  text-decoration: none;
-}
-
 .hotels-filter-form {
   display: flex;
   flex-wrap: wrap;
@@ -1074,105 +915,6 @@ img {
   border: 0;
   margin: 0 70px 0 0;
   min-width: 150px;
-}
-
-.control-hotels-filter-infrastructure {
-  position: relative;
-  padding-left: 36px;
-}
-
-.control-infrastructure-mark {
-  position: absolute;
-  background: #ffffff;
-  border-radius: 4px;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  top: 0;
-}
-
-.control-infrastructure-label {
-  font-family: 'League Spartan', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.control-infrastructure-input:checked + .control-infrastructure-mark::before {
-  background-image: url("../images/icons/tick.svg");
-  position: absolute;
-  content: "";
-  width: 12px;
-  height: 10px;
-  top: 5px;
-  left: 4px;
-}
-
-.control-hotels-filter-infrastructure:hover {
-  opacity: 60%;
-}
-
-.control-hotels-filter-infrastructure:focus-within .control-infrastructure-mark {
-  outline: 3px solid #83b3d3;
-}
-
-.control-hotels-filter-infrastructure:active {
-  opacity: 30%;
-}
-
-.hotels-filter-type-group {
-  min-width: 150px;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  margin-right: auto;
-}
-
-.control-hotels-type {
-  position: relative;
-  padding-left: 36px;
-}
-
-.control-type-mark {
-  position: absolute;
-  background: #ffffff;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  top: 0;
-}
-
-.control-type-label {
-  font-family: 'League Spartan', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.control-type-input:checked + .control-type-mark::before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #3f5e72;
-  border-radius: 50%;
-  top: 5px;
-  left: 5px;
-}
-
-.control-hotels-type:hover {
-  opacity: 60%;
-}
-
-.control-hotels-type:focus-within .control-type-mark {
-  outline: 3px solid #83b3d3;
-}
-
-.control-hotels-type:active {
-  opacity: 30%;
 }
 
 .hotels-filter-price-group {
@@ -1254,13 +996,13 @@ img {
   line-height: 24px;
   width: 100%;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .hotels-filter-price-range-input::-webkit-outer-spin-button,
 .hotels-filter-price-range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -1271,7 +1013,7 @@ img {
 
 .hotels-filter-price-range-bar {
   height: 4px;
-  background: #ffffff4d;
+  background: rgba(255, 255, 255, 0.3019607843);
   position: relative;
   width: 288px;
 }
@@ -1280,7 +1022,6 @@ img {
   height: 4px;
   background: #ffffff;
 }
-
 
 .hotels-filter-price-range-toggle {
   position: absolute;
@@ -1392,7 +1133,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1411,7 +1152,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1429,7 +1170,7 @@ img {
   border-radius: 4px;
   text-align: center;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1448,7 +1189,7 @@ img {
   border: none;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1467,7 +1208,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1486,7 +1227,7 @@ img {
   border: none;
   text-align: center;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1505,8 +1246,8 @@ img {
   border-radius: 4px;
   border: none;
   text-align: center;
-  color: #ffffff4d;
-  font-family: 'League Spartan', sans-serif;
+  color: rgba(255, 255, 255, 0.3019607843);
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1524,8 +1265,8 @@ img {
   background-color: transparent;
   border-radius: 4px;
   text-align: center;
-  color: #ffffff4d;
-  font-family: 'League Spartan', sans-serif;
+  color: rgba(255, 255, 255, 0.3019607843);
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1544,8 +1285,8 @@ img {
   border-radius: 4px;
   border: none;
   text-align: center;
-  color: #ffffff4d;
-  font-family: 'League Spartan', sans-serif;
+  color: rgba(255, 255, 255, 0.3019607843);
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1566,7 +1307,7 @@ img {
   text-align: center;
   color: #ffffff;
   opacity: 0.1;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1582,7 +1323,8 @@ img {
 .hotels-catalog {
   background-color: #ffffff;
   color: #000000;
-  margin-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .hotels-catalog-filter-view {
@@ -1622,7 +1364,7 @@ img {
   background: url("../images/icons/arrow-down.svg") no-repeat;
   background-position: right 20px center;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .hotels-filter-price-container:hover {
@@ -1635,6 +1377,187 @@ img {
 
 .hotels-filter-price-container:active {
   border: 2px solid #3f5e72;
+}
+
+.catalog-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  min-width: 114px;
+  align-items: center;
+}
+
+.breadcrumb-item-home {
+  color: #ffffff;
+  display: block;
+  margin-right: 10px;
+  width: 31px;
+  background-image: url("../images/icons/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: center left 22px;
+  background-size: 8px auto;
+}
+
+.breadcrumbs-link-home {
+  fill: #ffffff;
+}
+
+.breadcrumbs-link-home:hover .breadcrumbs-home-icon {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-home:focus .breadcrumbs-home-icon {
+  fill: #ffffff;
+}
+
+.breadcrumbs-link-home:active .breadcrumbs-home-icon {
+  fill: rgba(255, 255, 255, 0.3019607843);
+}
+
+.breadcrumb-item {
+  margin-right: 5px;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.breadcrumbs-link:focus {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs-link:active {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.3019607843);
+  text-decoration: none;
+}
+
+.control-hotels-filter-infrastructure {
+  position: relative;
+  padding-left: 36px;
+}
+
+.control-infrastructure-mark {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+}
+
+.control-infrastructure-label {
+  font-family: "League Spartan", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.control-infrastructure-input:checked + .control-infrastructure-mark::before {
+  background-image: url("../images/icons/tick.svg");
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 10px;
+  top: 5px;
+  left: 4px;
+}
+
+.control-hotels-filter-infrastructure:hover {
+  opacity: 60%;
+}
+
+.control-hotels-filter-infrastructure:focus-within .control-infrastructure-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control-hotels-filter-infrastructure:active {
+  opacity: 30%;
+}
+
+.hotels-filter-type-group {
+  min-width: 150px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-right: auto;
+}
+
+.control-hotels-type {
+  position: relative;
+  padding-left: 36px;
+}
+
+.control-type-mark {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+}
+
+.control-type-label {
+  font-family: "League Spartan", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.control-type-input:checked + .control-type-mark::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.control-hotels-type:hover {
+  opacity: 60%;
+}
+
+.control-hotels-type:focus-within .control-type-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control-hotels-type:active {
+  opacity: 30%;
 }
 
 .hotels-catalog-view {
@@ -1716,7 +1639,12 @@ img {
   line-height: 28px;
   color: #000000;
   margin: 0;
-  grid-column: 1 / 3;
+  grid-column: 1/3;
+}
+
+.hotel-card-title a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .hotels-features {
@@ -1743,6 +1671,41 @@ img {
   color: #333333;
   text-align: right;
   margin: 0;
+}
+
+.hotel-card-rating-stars {
+  display: block;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: space;
+  background-size: 18px 17px;
+  background-position: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hotel-card-rating-stars-four {
+  width: 75px;
+}
+
+.hotel-card-rating-stars-three {
+  width: 60px;
+}
+
+.hotel-card-rating-stars-two {
+  width: 40px;
+}
+
+.hotel-card-rating-numbers {
+  background: #f2f2f2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+  text-align: center;
+  padding: 10px 22px;
+  border-radius: 4px;
 }
 
 .button-info {
@@ -1812,7 +1775,7 @@ img {
 
 .button-bookmark {
   background: #82b3d3;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1859,7 +1822,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3019607843);
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -1884,7 +1847,7 @@ img {
 
 .button-bookmark-done {
   background: #7db54f;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1899,7 +1862,7 @@ img {
 
 .button-bookmark-done:hover {
   background: #6c9e42;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1932,7 +1895,7 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3019607843);
   text-decoration: none;
   text-align: center;
   border: none;
@@ -1952,41 +1915,6 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.hotel-card-rating-stars {
-  display: block;
-  background-image: url("../images/icons/star.svg");
-  background-repeat: space;
-  background-size: 18px 17px;
-  background-position: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.hotel-card-rating-stars-four {
-  width: 75px;
-}
-
-.hotel-card-rating-stars-three {
-  width: 60px;
-}
-
-.hotel-card-rating-stars-two {
-  width: 40px;
-}
-
-.hotel-card-rating-numbers {
-  background: #f2f2f2;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #333333;
-  margin: 0;
-  text-align: center;
-  padding: 10px 22px;
-  border-radius: 4px;
 }
 
 .pagination {
@@ -2266,7 +2194,7 @@ img {
 }
 
 .modal-title {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -2307,7 +2235,7 @@ img {
 .booking-text {
   margin-top: 4px;
   margin-bottom: 23px;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2440,7 +2368,6 @@ img {
   border-radius: 4px 0 0 4px;
 }
 
-
 .input-control-minus::after {
   position: absolute;
   content: "";
@@ -2501,7 +2428,7 @@ img {
   padding: 18px 77px;
   width: 577px;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2551,7 +2478,7 @@ img {
 }
 
 .subscription-modal-title {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -2569,7 +2496,7 @@ img {
   padding: 18px 77px;
   width: 100%;
   color: #ffffff;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2606,3 +2533,258 @@ img {
   background-position: center;
   cursor: pointer;
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.catalog-main {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hotel-preview {
+  display: flex;
+  flex-direction: column;
+  background: rgba(131, 179, 211, 0.05);
+  color: #000000;
+}
+
+.hotels-preview-features {
+  display: flex;
+  padding: 0 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.hotel-preview-type {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(131, 179, 211, 0.2);
+  margin: 0;
+  margin-right: 10px;
+}
+
+.hotel-preview-price {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(131, 179, 211, 0.2);
+  margin: 0;
+  margin-right: 10px;
+}
+
+.hotel-preview-rating-numbers {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(131, 179, 211, 0.2);
+  margin: 0;
+}
+
+.hotel-preview-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 20px;
+}
+
+.hotel-preview-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  padding: 0 20px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.hotel-preview-button {
+  font-family: "League Spartan", sans-serif;
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 20%;
+  padding: 8px 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.hotel-preview-button:hover {
+  background: #615048;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hotel-preview-button:focus {
+  background: #615048;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hotel-preview-button:active {
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hotel-preview-button:disabled {
+  background: #e5e5e5;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hotel-preview-button-back {
+  font-family: "League Spartan", sans-serif;
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 20%;
+  padding: 8px 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.hotel-preview-button:hover {
+  background: #615048;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hotel-preview-button:focus {
+  background: #615048;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hotel-preview-button:active {
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.hotel-preview-button:disabled {
+  background: #e5e5e5;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background: #f2f2f2;
+  color: #000000;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

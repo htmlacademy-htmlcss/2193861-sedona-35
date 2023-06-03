@@ -1,0 +1,169 @@
+    <h1 class="visually-hidden">Catalog</h1>
+    <div class="page-container">
+      <section class="hotels-filter" data-test="filter">
+        <h2 class="visually-hidden">Filter management</h2>
+      <section class="hotels-filter-header">
+      <header class="catalog-header">
+        <h2 class="catalog-header-title">Sedona Hotels</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumb-item-home">
+            <a href="index.html" class="breadcrumbs-link-home">
+              <svg class="breadcrumbs-home-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
+              </svg>
+              <span class="visually-hidden">To main</span></a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#" class="breadcrumbs-link">Hotels</a>
+          </li>
+        </ul>
+      </header>
+      </section>
+      <section class="hotels-filter-control">
+      <h2 class="visually-hidden">Filters</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get" class="hotels-filter-form">
+        <fieldset class="hotels-filter-infrastructure-group">
+          <legend class="hotels-filter-infrustructure-title">Infrastructure:</legend>
+          <ul class="hotels-filter-infrastructure-list">
+          <li class="hotels-filter-infrastructure-item">
+            <label class="control-hotels-filter-infrastructure">
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="swimming-pool" checked>
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Swimming Pool</span>
+            </label>
+          </li>
+          <li class="hotels-filter-infrastructure-item">
+            <label class="control-hotels-filter-infrastructure">
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="parking" checked>
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Parking</span>
+            </label>
+          </li>
+          <li class="hotels-filter-infrastructure-item">
+            <label class="control-hotels-filter-infrastructure">
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="wi-fi">
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Wi-Fi</span>
+            </label>
+          </li>
+          </ul>
+        </fieldset>
+        <fieldset class="hotels-filter-type-group">
+          <legend class="hotels-filter-type-title">Housing type:</legend>
+          <ul class="hotels-filter-type-list">
+            <li class="hotels-filter-type-item">
+              <label class="control-hotels-type">
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="hotel" checked>
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Hotel</span>
+              </label>
+            </li>
+            <li class="hotels-filter-type-item">
+              <label class="control-hotels-type">
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="motel">
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Motel</span>
+              </label>
+            </li>
+            <li class="hotels-filter-type-item">
+              <label class="control-hotels-type">
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="apartments">
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Apartments</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="hotels-filter-price-group">
+          <legend class="hotels-filter-price-title">Cost:</legend>
+            <div class="hotels-filter-price-range">
+              <div class="hotels-filter-price-wrapper">
+                <div class="hotels-filter-price-wrapper-input min-input">
+                  <label class="hotels-filter-price" for="min-price-input">From</label>
+                  <input class="hotels-filter-price-range-input" id="min-price-input" type="number" name="min-price" value="0" min="0" max="9000">
+                </div>
+                <div class="hotels-filter-price-wrapper-input max-input">
+                  <label class="hotels-filter-price" for="max-price-input">To</label>
+                  <input class="hotels-filter-price-range-input" id="max-price-input" type="number" name="min-price" value="9000" min="0" max="9000">
+                </div>
+              </div>
+              <div class="hotels-filter-price-range-scale">
+                <div class="hotels-filter-price-range-bar">
+                  <div class="hotels-filter-price-bar" style="width: 226px"></div>
+                </div>
+                <button class="hotels-filter-price-range-toggle price-min-range" type="button">
+                <span class="visually-hidden">Cost floor control</span>
+                </button>
+                <button class="hotels-filter-price-range-toggle price-max-range" type="button">
+                <span class="visually-hidden">Upper cost control</span>
+                </button>
+              </div>
+            </div>
+        </fieldset>
+        <div class="hotel-filter-button-container">
+        <button class="btn button-submit" type="submit">Apply</button>
+        <button class="btn button-reset" type="reset">Reset</button>
+        </div>
+      </form>
+      </section>
+    </section>
+    <section class="hotels-catalog" data-test="catalog">
+      <h2 class="visually-hidden">Hotel catalog</h2>
+      <section class="hotels-catalog-filter-view">
+      <h2 class="hotels-catalog-title">Hotels found: 38</h2>
+      <div class="hotels-filter-price-container">
+        <span class="visually-hidden">Sort by price</span>
+        <select class="hotels-filter-price-sort">
+          <option value="">Cheap first</option>
+      </select>
+      </div>
+      <ul class="hotels-catalog-view">
+        <li class="hotels-catalog-view-type hotels-catalog-view-type-current">
+          <a href="#" class="button-view">
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path d="M0 0h16v14H0z"/></clipPath></defs>
+            </svg>
+            <span class="visually-hidden">Show table</span></a>
+        </li>
+        <li class="hotels-catalog-view-type">
+          <a href="#" class="button-view">
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="b"><path d="M0 0h16v14H0z"/></clipPath></defs>
+            </svg>
+            <span class="visually-hidden">Show cards</span>
+          </a>
+        </li>
+        <li class="hotels-catalog-view-type">
+          <a href="#" class="button-view">
+
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="c"><path d="M0 0h16v14H0z"/></clipPath></defs>
+            </svg>
+            <span class="visually-hidden">Show as a list</span>
+          </a>
+        </li>
+      </ul>
+      </section>
+      {% include "hotels-list.njk" %}
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <span class="pagination-item-hidden">...</span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-last" href="#">10</a>
+        </li>
+      </ul>
+    </section>
+  </div>

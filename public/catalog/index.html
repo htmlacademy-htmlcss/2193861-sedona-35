@@ -1,0 +1,427 @@
+  <!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>Sedona - Hotels</title>
+      <link rel="icon" href="/favicon.ico">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+      <header class="main-header" data-test="header">
+        <nav class="navigation">
+          <a class="navigation-logo" href="/index">
+            <img src="/images/logo-sedona.svg" alt="Логотип города Седона." width="140" height="70">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="/index" >Main</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about" >About Sedona</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="/catalog" >Hotels</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="/catalog">
+                <svg class="navigation-link-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" fill="#000"/>
+                </svg>
+                <span class="visually-hidden">Search</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-like" href="/catalog">
+                <span class="visually-hidden">Favorites</span>
+                <svg class="navigation-link-icon navigation-link-icon-like" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
+                </svg>
+                <span class="visually-hidden">12</span>
+                <span class="navigation-link-like-counter"></span>
+              </a>
+            </li>
+            <li  class="navigation-item-button">
+              <a class="navigation-link-want" href="#" >I want to go!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+<main class="main-container main-page" data-test="main">
+      <h1 class="visually-hidden">Catalog</h1>
+    <div class="page-container">
+      <section class="hotels-filter" data-test="filter">
+        <h2 class="visually-hidden">Filter management</h2>
+      <section class="hotels-filter-header">
+      <header class="catalog-header">
+        <h2 class="catalog-header-title">Sedona Hotels</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumb-item-home">
+            <a href="index.html" class="breadcrumbs-link-home">
+              <svg class="breadcrumbs-home-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
+              </svg>
+              <span class="visually-hidden">To main</span></a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#" class="breadcrumbs-link">Hotels</a>
+          </li>
+        </ul>
+      </header>
+      </section>
+      <section class="hotels-filter-control">
+      <h2 class="visually-hidden">Filters</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get" class="hotels-filter-form">
+        <fieldset class="hotels-filter-infrastructure-group">
+          <legend class="hotels-filter-infrustructure-title">Infrastructure:</legend>
+          <ul class="hotels-filter-infrastructure-list">
+          <li class="hotels-filter-infrastructure-item">
+            <label class="control-hotels-filter-infrastructure">
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="swimming-pool" checked>
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Swimming Pool</span>
+            </label>
+          </li>
+          <li class="hotels-filter-infrastructure-item">
+            <label class="control-hotels-filter-infrastructure">
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="parking" checked>
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Parking</span>
+            </label>
+          </li>
+          <li class="hotels-filter-infrastructure-item">
+            <label class="control-hotels-filter-infrastructure">
+              <input class="visually-hidden control-infrastructure-input" type="checkbox" name="wi-fi">
+              <span class="control-infrastructure-mark"></span>
+              <span class="control-infrastructure-label">Wi-Fi</span>
+            </label>
+          </li>
+          </ul>
+        </fieldset>
+        <fieldset class="hotels-filter-type-group">
+          <legend class="hotels-filter-type-title">Housing type:</legend>
+          <ul class="hotels-filter-type-list">
+            <li class="hotels-filter-type-item">
+              <label class="control-hotels-type">
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="hotel" checked>
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Hotel</span>
+              </label>
+            </li>
+            <li class="hotels-filter-type-item">
+              <label class="control-hotels-type">
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="motel">
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Motel</span>
+              </label>
+            </li>
+            <li class="hotels-filter-type-item">
+              <label class="control-hotels-type">
+                <input class="visually-hidden control-type-input" type="radio" name="hotel-type" id="apartments">
+                <span class="control-type-mark"></span>
+                <span class="control-type-label">Apartments</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="hotels-filter-price-group">
+          <legend class="hotels-filter-price-title">Cost:</legend>
+            <div class="hotels-filter-price-range">
+              <div class="hotels-filter-price-wrapper">
+                <div class="hotels-filter-price-wrapper-input min-input">
+                  <label class="hotels-filter-price" for="min-price-input">From</label>
+                  <input class="hotels-filter-price-range-input" id="min-price-input" type="number" name="min-price" value="0" min="0" max="9000">
+                </div>
+                <div class="hotels-filter-price-wrapper-input max-input">
+                  <label class="hotels-filter-price" for="max-price-input">To</label>
+                  <input class="hotels-filter-price-range-input" id="max-price-input" type="number" name="min-price" value="9000" min="0" max="9000">
+                </div>
+              </div>
+              <div class="hotels-filter-price-range-scale">
+                <div class="hotels-filter-price-range-bar">
+                  <div class="hotels-filter-price-bar" style="width: 226px"></div>
+                </div>
+                <button class="hotels-filter-price-range-toggle price-min-range" type="button">
+                <span class="visually-hidden">Cost floor control</span>
+                </button>
+                <button class="hotels-filter-price-range-toggle price-max-range" type="button">
+                <span class="visually-hidden">Upper cost control</span>
+                </button>
+              </div>
+            </div>
+        </fieldset>
+        <div class="hotel-filter-button-container">
+        <button class="btn button-submit" type="submit">Apply</button>
+        <button class="btn button-reset" type="reset">Reset</button>
+        </div>
+      </form>
+      </section>
+    </section>
+    <section class="hotels-catalog" data-test="catalog">
+      <h2 class="visually-hidden">Hotel catalog</h2>
+      <section class="hotels-catalog-filter-view">
+      <h2 class="hotels-catalog-title">Hotels found: 38</h2>
+      <div class="hotels-filter-price-container">
+        <span class="visually-hidden">Sort by price</span>
+        <select class="hotels-filter-price-sort">
+          <option value="">Cheap first</option>
+      </select>
+      </div>
+      <ul class="hotels-catalog-view">
+        <li class="hotels-catalog-view-type hotels-catalog-view-type-current">
+          <a href="#" class="button-view">
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path d="M0 0h16v14H0z"/></clipPath></defs>
+            </svg>
+            <span class="visually-hidden">Show table</span></a>
+        </li>
+        <li class="hotels-catalog-view-type">
+          <a href="#" class="button-view">
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="b"><path d="M0 0h16v14H0z"/></clipPath></defs>
+            </svg>
+            <span class="visually-hidden">Show cards</span>
+          </a>
+        </li>
+        <li class="hotels-catalog-view-type">
+          <a href="#" class="button-view">
+
+            <svg class="button-view-icon" aria-hidden="true" focusable="true" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="c"><path d="M0 0h16v14H0z"/></clipPath></defs>
+            </svg>
+            <span class="visually-hidden">Show as a list</span>
+          </a>
+        </li>
+      </ul>
+      </section>
+      <ul class="hotels-list">
+  
+    <li class="hotel-card">
+  <a href="/hotels/amara-resort-spa/"><img class="hotel-card-image" src="/images/catalog/hotel-amara.jpeg" alt="Amara Resort &amp; Spa" width="300" height="212"></a>
+  <div class="hotels-features">
+    <h3 class="hotel-card-title"><a href="/hotels/amara-resort-spa/">Amara Resort &amp; Spa</a></h3>
+    <p class="hotel-card-type">Hotel</p>
+    <p class="hotel-card-price">From 4000 ₽</p>
+    <a class="btn button-info" href="/hotels/amara-resort-spa/">more</a>
+    <button class="btn button-bookmark" type="button">To favorites</button>
+    <p class="hotel-card-rating-stars hotel-card-rating-stars-four">
+      <span class="visually-hidden">4 stars</span>
+    </p>
+    <p class="hotel-card-rating-numbers">Rating: 8.5</p>
+  </div>
+</li>
+
+  
+    <li class="hotel-card">
+  <a href="/hotels/desert-quall-inn/"><img class="hotel-card-image" src="/images/catalog/hotel-desert.jpeg" alt="Desert Quail Inn" width="300" height="212"></a>
+  <div class="hotels-features">
+    <h3 class="hotel-card-title"><a href="/hotels/desert-quall-inn/">Desert Quail Inn</a></h3>
+    <p class="hotel-card-type">Hotel</p>
+    <p class="hotel-card-price">From 2500 ₽</p>
+    <a class="btn button-info" href="/hotels/desert-quall-inn/">more</a>
+    <button class="btn button-bookmark" type="button">To favorites</button>
+    <p class="hotel-card-rating-stars hotel-card-rating-stars-four">
+      <span class="visually-hidden">4 stars</span>
+    </p>
+    <p class="hotel-card-rating-numbers">Rating: 6.9</p>
+  </div>
+</li>
+
+  
+    <li class="hotel-card">
+  <a href="/hotels/greentree-inn/"><img class="hotel-card-image" src="/images/catalog/hotel-greentree.jpeg" alt="GreenTree Inn" width="300" height="212"></a>
+  <div class="hotels-features">
+    <h3 class="hotel-card-title"><a href="/hotels/greentree-inn/">GreenTree Inn</a></h3>
+    <p class="hotel-card-type">Hotel</p>
+    <p class="hotel-card-price">From 1500 ₽</p>
+    <a class="btn button-info" href="/hotels/greentree-inn/">more</a>
+    <button class="btn button-bookmark" type="button">To favorites</button>
+    <p class="hotel-card-rating-stars hotel-card-rating-stars-four">
+      <span class="visually-hidden">4 stars</span>
+    </p>
+    <p class="hotel-card-rating-numbers">Rating: 5.0</p>
+  </div>
+</li>
+
+  
+    <li class="hotel-card">
+  <a href="/hotels/villas-at-poco-diablo/"><img class="hotel-card-image" src="/images/catalog/hotel-diablo.jpeg" alt="Villas at Poco Diablo" width="300" height="212"></a>
+  <div class="hotels-features">
+    <h3 class="hotel-card-title"><a href="/hotels/villas-at-poco-diablo/">Villas at Poco Diablo</a></h3>
+    <p class="hotel-card-type">Hotel</p>
+    <p class="hotel-card-price">From 5000 ₽</p>
+    <a class="btn button-info" href="/hotels/villas-at-poco-diablo/">more</a>
+    <button class="btn button-bookmark" type="button">To favorites</button>
+    <p class="hotel-card-rating-stars hotel-card-rating-stars-four">
+      <span class="visually-hidden">4 stars</span>
+    </p>
+    <p class="hotel-card-rating-numbers">Rating: 9.2</p>
+  </div>
+</li>
+
+  
+</ul>
+
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <span class="pagination-item-hidden">...</span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-last" href="#">10</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+
+</main>
+      <footer class="page-footer" data-test="footer">
+        <section class="subscribe" data-test="subscribe">
+          <div class="subscribe-container">
+          <div class="subscribe-text-container">
+          <h2 class="subscribe-title">Subscribe to newsletter</h2>
+          <p class="subscribe-text">Only useful information and no spam, honest Boy Scouts!</p>
+          </div>
+          <form class="form-subscribe" method="get" action="https://echo.htmlacademy.ru/">
+            <label class="visually-hidden" for="subscribe-email">Enter your e-mail</label>
+            <input class="form-subscribe-input" type="email" placeholder="Enter your e-mail" id="subscribe-email" name="subscribe-email" required>
+
+            <br>
+            <button class="button form-subscribe-submit-button" type="submit">Subscribe</button>
+          </form>
+        </div>
+        </section>
+        <div class="page-footer-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden">Social media</h2>
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">VKontakte</span>
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="25" height="15" viewBox="0 0 25 15" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Telegram</span>
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">YouTube</span>
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-contacts">
+            <h2 class="visually-hidden">How to contact us</h2>
+            <address class="footer-contact-phone">
+              <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+          </section>
+          <section class="footer-logo">
+          <h2 class="visually-hidden">HTML Academy</h2>
+          <a class="footer-logo-image" href="https://htmlacademy.ru/">
+            <svg class="footer-logo-icon" aria-hidden="false" focusable="true" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+            </svg>
+          </a>
+          </section>
+        </div>
+      </footer>
+
+<div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Hotel search in Sedona</h2>
+            <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="check-in-input-group">
+                <label class="check-in-date-title" for="check-in-date">Arrival date:</label>
+                <input class="check-in-date-input" type="date" name="check-in-date" id="check-in-date" value="2020-04-27" required>
+                <p class="booking-text warning">We cannot send you to the past.</p>
+              </div>
+              <div class="check-in-input-group">
+                <label class="check-in-date-title" for="check-in-date">Date of departure:</label>
+                <input class="check-in-date-input" type="date" name="check-out-date" id="check-out-date" value="2023-09-01" required>
+                <p class="booking-text">There are rooms available for these dates. As long as there is.</p>
+              </div>
+              <div class="guests-count-container">
+                <div class="guests-count-wrapper">
+                <label class="guest-count-title-adults">Adults:</label>
+                  <div class="guests-count">
+                    <span class="input-control-minus"></span>
+                    <label class="visually-hidden" for="input-counter-control-adults">Number of adults</label>
+                    <input class="input-counter" id="input-counter-control-adults" type="text" value="2" required>
+                    <span class="input-control-plus"></span>
+                  </div>
+                </div>
+                <div class="guests-count-wrapper">
+                  <span class="guest-count-title">
+                    <label class="guest-count-title-kids">Children:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Enter the number of children who will be with you, whose age is from 6 to 18 years. Children under 6 years stay free of charge.</span>
+                    </span>
+                  </span>
+                  <div class="guests-count">
+                    <span class="input-control-minus"></span>
+                    <label class="visually-hidden" for="input-counter-control-kids">Amount of children</label>
+                    <input class="input-counter" id="input-counter-control-kids" type="text" value="2" required>
+                    <span class="input-control-plus"></span>
+                  </div>
+                </div>
+              </div>
+              <button class="btn find-button" type="submit">Search</button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+<div class="subscription-container subscription-container-close">
+        <div class="subscription-modal subscription-auth">
+          <button class="subscription-modal-close-button" type="button">
+            <span class="visually-hidden">Close</span>
+          </button>
+          <section class="subscription-modal-content">
+            <h2 class="subscription-modal-title">Your e-mail was added to newsletter</h2>
+            <img src="/images/icons/green-tick.webp" alt="succesful subscription">
+            <button class="subscription-ok-button">OK</button>
+          </section>
+        </div>
+      </div>
+
+
+<script src="/js/script.js"></script>

@@ -18,18 +18,18 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html" >Main</a>
+              <a class="navigation-link" href="index.html" >Main</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about" >About Sedona</a>
+              <a class="navigation-link navigation-link-current" href="about.html" >About Sedona</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog" >Hotels</a>
+              <a class="navigation-link" href="catalog.html" >Hotels</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog">
+              <a class="navigation-link" href="#">
                 <svg class="navigation-link-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" fill="#000"/>
                 </svg>
@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-like" href="catalog">
+              <a class="navigation-link navigation-link-like" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <svg class="navigation-link-icon navigation-link-icon-like" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
@@ -54,29 +54,13 @@
       </header>
       <main class="main-container main-page" data-test="main">
         <div class="page-container">
-        <div class="hero-container">
-        <section class="hero" data-test="hero">
-          <h1 class="visually-hidden">Sedona - town in Arizona</h1>
-          <img class="hero-sedona-logo" src="images/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" width="458" height="352">
-          <svg width="1200" height="57" viewBox="0 0 1200 57" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
-            </svg>
-        </section>
-        </div>
-        <section class="advantages" data-test="advantages">
-          <div class="sedona-advantages-text">
+        <section class="advantages about-advantages" data-test="advantages">
+          <div class="sedona-advantages-text sedona-advantages-text-about">
             <h2 class="visually-hidden">Advantages</h2>
-            <p class="advantages-about-sedona">Sedona is a small town in Arizona that deserves more!</p>
-            <p class="advantages-sedona-reasons">Consider the reasons why Sedona is cooler than the Grand Canyon!</p>
+            <p class="advantages-about-sedona">ALMOST THE ENTIRE WORLD KNOWS THAT SEDONA, STRATEGICALLY SITUATED AT THE MOUTH OF SPECTACULAR OAK CREEK CANYON, IS A UNIQUE PLACE.</p>
+            <p class="advantages-sedona-reasons">START WITH SCENERY THAT MAKES YOUR HEART LEAP. SEDONA NESTLES AMONG A GEOLOGICAL WONDERLAND.</p>
           </div>
           <ul class="advantages-item-list">
-            <li class="advantages-item-real-town">
-              <div class="advantage-item-text-container">
-              <h3 class="advantages-item-title advantages-item-title-town">real town</h3>
-              <p class="advantages-item-text">Sedona is not an attraction for tourists, it has its own life</p>
-              </div>
-              <img src="images/house-in-mountains-photo.jpeg" alt="Домики на фоне гор." width="800" height="384">
-            </li>
             <li class="advantages-item-small-place">
               <div class="advantage-item-text-container advantage-item-text-container-place">
               <h3 class="advantages-item-title advantages-item-title-place">small area</h3>
@@ -95,12 +79,12 @@
               <p class="advantages-item-text">Most go to the Grand Canyon and crowd there</p>
               </div>
             </li>
-            <li class="advantages-item-devil-bridge">
+            <li class="advantages-item-real-town">
               <div class="advantage-item-text-container">
-              <h3 class="advantages-item-title advantages-item-title-bridge">There is<br>devil's bridge</h3>
-              <p class="advantages-item-text">Yes, you can walk through it! If you dare, of course</p>
+              <h3 class="advantages-item-title advantages-item-title-town">real town</h3>
+              <p class="advantages-item-text">Sedona is not an attraction for tourists, it has its own life</p>
               </div>
-              <img src="images/canyon-photo.jpeg" alt="Фотография каньона и гор." width="800" height="384">
+              <img src="images/house-in-mountains-photo.jpeg" alt="Домики на фоне гор." width="800" height="384">
             </li>
             <li class="advantages-item-staying">
               <img class="advantages-item-icon" src="./images/icons/advantage-icon-home.svg" alt="Жильё." width="75" height="72">
@@ -116,6 +100,13 @@
               <img class="advantages-item-icon" src="./images/icons/advantage-icon-souvenir.svg" alt="Сувениры." width="75" height="72">
               <h3 class="advantages-item-title">Souvenirs</h3>
               <p class="advantages-item-text advantages-item-text-souvenirs">Not only Chinese,<br> but real local production!</p>
+            </li>
+            <li class="advantages-item-devil-bridge">
+              <div class="advantage-item-text-container">
+              <h3 class="advantages-item-title advantages-item-title-bridge">There is<br>devil's bridge</h3>
+              <p class="advantages-item-text">Yes, you can walk through it! If you dare, of course</p>
+              </div>
+              <img src="images/canyon-photo.jpeg" alt="Фотография каньона и гор." width="800" height="384">
             </li>
           </ul>
         </section>
@@ -138,7 +129,6 @@
           <form class="form-subscribe" method="get" action="https://echo.htmlacademy.ru/">
             <label class="visually-hidden" for="subscribe-email">Enter your e-mail</label>
             <input class="form-subscribe-input" type="email" placeholder="Enter your e-mail" id="subscribe-email" name="subscribe-email" required>
-
             <br>
             <button class="button form-subscribe-submit-button" type="submit">Subscribe</button>
           </form>

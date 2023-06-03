@@ -1,0 +1,54 @@
+@use "./header/_header.scss";
+@use "./nav/nav.scss";
+@use "./hero/hero.scss";
+@use "./advantages/advantages.scss";
+@use "./hotel-search/hotel-search.scss";
+@use "./footer/footer.scss";
+@use "./subscribe/subscribe.scss";
+@use "./form-subscribe/form-subsribe.scss";
+@use "./socials/socials.scss";
+@use "./footer-contacts/footer-contacts.scss";
+@use "./footer-logo/footer-logo.scss";
+@use "./hotels-filter/hotels-filter.scss";
+@use "./catalog-header/catalog-header.scss";
+@use "./breadcrumbs/breadcrumbs.scss";
+@use "./controls-filter/controls-filter.scss";
+@use "./hotels-catalog-view/hotels-catalog-view.scss";
+@use "./hotels-list/hotels-list.scss";
+@use "./hotel-card/hotel-card.scss";
+@use "./button/button.scss";
+@use "./pagination/pagination.scss";
+@use "./modal/modal.scss";
+@use "./subscription-modal/subscription-modal.scss";
+@use "./container/container.scss";
+@use "./hotel-preview/hotel-preview.scss";
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background: #f2f2f2;
+  color: #000000;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

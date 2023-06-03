@@ -1,0 +1,47 @@
+.hotels-catalog-view {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  margin-left: 70px;
+}
+
+.hotels-catalog-view-type {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.hotels-catalog-view-type:last-child {
+  margin-right: 0;
+}
+
+.hotels-catalog-view-type-current {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.hotels-catalog-view-type:hover {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.hotels-catalog-view-type:focus-within {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.hotels-catalog-view-type:active {
+  border: 2px solid #68a2ca;
+  border-radius: 4px;
+}

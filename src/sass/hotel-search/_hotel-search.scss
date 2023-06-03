@@ -1,0 +1,129 @@
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  width: 1200px;
+  margin: 0;
+}
+
+.hotel-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 592px;
+  min-height: 214px;
+  padding: 96px 304px;
+  align-self: center;
+}
+
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.hotel-search-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.hotel-search-link {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 0;
+  background: #756157;
+  border-radius: 4px;
+  width: 375px;
+  height: 36px;
+}
+
+.hotel-search-link:hover {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 0;
+  background: #615048;
+  border-radius: 4px;
+  text-align: center;
+  width: 375px;
+  height: 36px;
+}
+
+.hotel-search-link:focus {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 0;
+  background: #615048;
+  border-radius: 4px;
+  text-align: center;
+  width: 375px;
+  height: 36px;
+}
+
+.hotel-search-link:active {
+  display: block;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 0;
+  background: #756157;
+  border-radius: 4px;
+  text-align: center;
+  width: 375px;
+  height: 36px;
+}
+
+.hotel-search-link:disabled {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 0;
+  background: #e5e5e5;
+  border-radius: 4px;
+  text-align: center;
+  width: 375px;
+  height: 36px;
+}
